@@ -1,0 +1,34 @@
+
+.blind{
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+ }
+
+
+ .inner{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+    width: 100%;
+ }
+
+ .more a{
+   color: #003dab;
+   font-weight: 700;
+   font-size: 16px;
+}
+
+.more a span img{
+   margin-left: 12px;
+   display: inline-block;
+   vertical-align: bottom;
+   padding-bottom: 3px;
+}
+
+.more a span.right img{
+   width:32px;
+}
