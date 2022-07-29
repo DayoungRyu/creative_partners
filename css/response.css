@@ -1,0 +1,348 @@
+/*
+  가장중요한 조건
+  가로스크롤은 절대 생기면 안된다.
+  가로스크롤이 생기는이유는
+  - 위드가 살이있는영역 ex)1200 1000px
+  - absolute ->부모한테 무조건 overflow hidden을 줘야됨
+  모바일 확인은 최고 작은 사이즈인 320 (크롬모바일 아이폰se) 확인시 잘나오묜 끝.
+ */
+
+/* 실콘텐츠 + 100 */
+/* 1300 */
+
+@media screen and (max-width: 1260px) {
+
+  /*header*/
+
+}
+
+/*
+테블릿 (768px 기준으로 잡음)
+중대적인 레이아웃 변화
+폰트사이즈 줄여준다 아래와같은룰로
+*/
+@media screen and (max-width: 1024px) {
+ 
+
+  
+/* main*/
+  
+
+  
+}
+
+/*
+ 모바일 (320px 기준으로 잡음)
+ *대대적 레이아웃 변화
+ 사이드 패딩 15~20
+ 대폰트 font-size: 38~28
+ 중폰트 18~28
+ 소폰트 12~ 16
+ 웬만한 레이아웃은 1줄 아니면 2줄
+*/
+@media screen and (max-width: 768px) {
+
+  /*header*/
+ 
+  header .header_wrap{
+    background: url(../img/main_bg-2.png) no-repeat;
+    background-size: 100%;
+    height: 480px;
+  }
+  header .header_wrap h1{width: 110px;height: 27px;top:29px; left:15px;}
+  header .header_wrap .slide-vide,.menu_wrap .menu{display: none;}
+  header .header-btn{
+    top: 24px;
+    right: 15px;
+    z-index: 999;
+    width: 32px;
+    height: 32px}
+  header .header-btn i{
+    width: 17px;height: 17px;
+  }
+  .menu_wrap{
+    justify-content: flex-end;
+  }
+  .menu_wrap p.header_ment{
+    font-size: 23px;
+    margin-bottom: 70px;
+  }
+
+  /*whatwedo*/
+
+  main .content .whatwedo{
+    padding:60px 0;
+  }
+  main .txt_box h2{    
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  main .txt_box strong{
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  main .txt_box p.txt_p{
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  main .content .whatwedo .content_box .txt_box{width: 100%;}
+  main .whatwedo_box .wwd_content{
+    width: 100%;
+  }
+  main .content .content_box .img_box{display: none;}
+
+  /*client*/
+
+  main .client{
+    padding:60px 0;
+  }
+
+  main .client .txt_box{
+    max-width: 100%;
+    padding:4px;
+  }
+
+  main .client .inner{
+    display:block;
+  }
+
+  main .client .slide{
+    width:100%;
+    max-width:100%;
+    padding:0;
+}
+
+.swiper-button-prev,.swiper-button-next,main .swiper-pagination{
+  display:none;  
+}
+
+/*service*/
+
+main .service{
+  padding:60px 0;
+}
+.service .inner{display:block;}
+.service .inner .txt_box{width:100%;}
+.service_content{
+  width:100%;float:none;margin:0;
+}
+.service .service_content:last-child{
+  margin-top:24px;
+  margin-left:0;
+}
+.service .service_content .text_wrap strong{
+  font-size: 18px;
+}
+.service .service_content .text_wrap .service_request{
+  font-size: 15px;
+}
+
+.service .service_content .text_wrap{
+  padding:20px 15px;
+}
+.service_content_box{
+  width:100%;
+}
+
+ 
+
+/*blog*/
+
+main .blog .inner{
+  padding:0;
+}
+
+main .blog{
+  padding:60px 0;
+}
+
+.blog .blog_content_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog .blog_content_box .blog_content{width: 100%;}
+.blog .blog_content_box .blog_content span{
+  font-size: 13px;
+  margin-top: 15px;
+}
+.blog .blog_content_box .blog_content strong{
+  font-size: 18px;
+}
+
+.blog .blog_content_box .blog_content p{
+  font-size:14px;
+}
+
+/*news*/
+
+main .news {
+    padding: 60px 0;
+}
+
+main .news .news_tx img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main .news .news_tx .news_top{
+  flex-direction: column;
+  border:0;
+  padding:0;
+}
+
+
+main .news .news_tx .img_wrap {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+
+}
+
+main .news .news_tx .img_wrap strong{
+  font-size: 18px;
+}
+
+main .news .news_tx .img_wrap p{
+  font-size:14px;
+}
+
+main .news .news_tx .img_wrap span{
+  font-size:15px;
+}
+
+main .news .news_tx{
+  width: 100%;
+}
+
+.news .inner {
+  display: block;
+}
+
+main .news .news_tx .news_wrap_box .news_bottom_box{
+  padding:12px;
+}
+
+main .news .news_tx .news_wrap_box .news_bottom_box .letter{
+  font-size:13px;
+}
+
+main .news .news_tx .news_wrap_box .news_bottom_box .letter_in{
+  font-size:16px;
+}
+
+main .news .news_tx .news_wrap_box .news_bottom_box .subbtn{
+  padding:10px;
+  font-size: 14px;
+}
+
+/*instagram*/
+
+main .news .sns_tx{
+  padding:12px;
+  width: 100%;
+  font-size: 28px;
+}
+
+
+/*footer*/
+
+footer .footer_top{
+  padding:40px 0;
+}
+
+footer .footer_top .inner{
+  display:block;
+}
+
+footer .footer_top .footer_left{
+  width: 100%;
+}
+
+footer .footer_top .footer_left p{
+  display:none;
+}
+
+footer .footer_top .footer_left h3{
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+footer .footer_top .footer_left .footer_arrow{
+  margin-left: 12px;
+}
+
+footer .footer_top .footer_left .footer_wrap{
+  display: block;
+}
+
+footer .footer_right{
+  margin-left: 0;
+  padding:0;
+  width: 100%;
+}
+
+footer .footer_top .footer_left .footer_wrap .f_wrap a{
+  height: 40px;
+}
+
+footer .footer_top .footer_left button{
+  height: 40px;
+}
+
+footer .footer_wrap .family_menu{
+  top: 160px;
+  left: 9px;
+}
+
+footer .footer_right .sns_box{
+  margin-top: 25px;
+}
+
+footer .footer_right .sns_box h4{
+  margin: 0px 0 10px 0px;
+  font-size:14px;
+}
+
+footer .footer_right .address_box h4{
+  font-size:14px; 
+}
+
+footer .footer_right .sns_box ul{
+  padding:0 12px;
+}
+
+
+footer .footer_right .address_box address{
+  font-size:13px;
+}
+
+footer .footer_right .info_policy{
+  font-size:12px;
+}
+
+footer .footer_bottom{
+  padding:8px 0;
+}
+
+footer .footer_bottom .inner{
+  display:block;
+  padding: 0;
+}
+
+footer .footer_bottom .copy{
+  text-align: center;
+  font-size:12px;
+  border-bottom: 1px solid #3e3e3e;
+  padding-bottom:8px;
+}
+
+footer .footer_bottom .top_btn span{
+  text-align:center;
+  padding-top:8px;
+}
+
+
+
+}
